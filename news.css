@@ -1,0 +1,114 @@
+body {
+    background-color: bisque;
+}
+@font-face {
+    font-family: 'Lobster';
+    src: url(Lobster_Two/LobsterTwo-BoldItalic.ttf);
+}
+@font-face {
+    font-family: 'Lobster2';
+    src: url(Lobster_Two/LobsterTwo-Bold.ttf);
+}
+@font-face {
+    font-family: 'Lobster3';
+    src:url(Lobster_Two/LobsterTwo-Italic.ttf) ;
+}
+@font-face {
+    font-family: 'Rock';
+    src: url(Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Lobsterf';
+    src: url(Dancing_Script/static/DancingScript-Regular.ttf);
+}
+
+#Heading{
+    font-family: 'Lobster';
+    text-align: center;
+    border-image: linear-gradient(to right, #4c4c4c, #e3e3e5) 1;
+    /* animation: slideGradient 3s infinite linear; */
+    border-bottom: 8px solid;
+    border-top: 8px solid;
+}
+.StoryHead{
+    text-align: center;
+    font-family: 'Lobster2';
+    /* color: white; */
+}
+.Reporter{
+    font-family: 'Lobster3';
+    text-align: center; 
+    border-image: linear-gradient(to right, #4c4c4c, #e3e3e5) 1;
+    /* animation: slideGradient 3s infinite linear; */
+    border-bottom: 8px solid;
+}
+.articles1{
+    column-count: 2;
+    column-gap: 20px;
+    border-image: linear-gradient(to right, #4c4c4c, #e3e3e5) 1;
+    /* animation: slideGradient 3s infinite linear; */
+    border-bottom: 8px solid;
+}
+.hOfOne1{
+    font-family: 'Lobster2';
+}
+.intro{
+    font-family: 'Rock';
+}
+.hOfTwo1{
+    font-family: 'Lobster2';
+}
+.articles2{
+    column-count: 2;
+    column-gap: 20px;
+    border-image: linear-gradient(to right, #4c4c4c, #e3e3e5) 1;
+    /* animation: slideGradient 3s infinite linear; */
+    border-bottom: 8px solid;
+}
+.hOfOne2{
+    font-family: 'Lobster2';
+}
+.quote{
+    font-style: italic;
+}
+.hOfTwo2{
+    font-family: 'Lobster2';
+}
+.hOfTwo3{
+    font-family: 'Lobster2';
+}
+.img{
+    float: right;
+}
+h5{
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .articles1, .articles2 {
+        column-count: 1;
+    }
+    .img {
+        float: none; 
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+    #Heading, .StoryHead {
+        font-size: 1.5em; 
+    }
+}
+
+@media (max-width: 480px) {
+    body, .articles1, .articles2 {
+        padding: 5px;
+    }
+    #Heading, .Reporter {
+        border-width: 4px; 
+    }
+    p, .intro {
+        font-size: 0.9em; 
+    }
+    .img {
+        width: 100%; 
+    }
+}
